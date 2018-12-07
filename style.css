@@ -1,0 +1,9 @@
+body{
+  font-family: Helvetica, sans-serif;
+}
+
+section{
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+}
