@@ -14,6 +14,7 @@ var todaysWeather = {
     date: "Saturday, Dec 8",
     conditions: "Sunny and cold"
 }
+
 // Get a reference to the DOM elements
 var tempContainer = document.querySelector("#temperature");
 var dateContainer = document.querySelector("#todays-date");
@@ -60,21 +61,69 @@ tomorrowContainer.innerHTML = HTMLString;
 //CONDITIONALS
 
 // 2+2 === 4 --> evaluates to true 
-// If statements check to see if the code in the parentheses evaluates to true
 
+console.log(1+1===2);
+
+// If statements check to see if the code in the parentheses evaluates to true
+if(3+3===7){
+    console.log("three plus three is indeed seven!");
+}
+
+var myName = "Dwayne The Rock Johnson";
+
+if(myName === "Dwayne The Rock Johnson"){
+    console.log("Congrats!");
+} else {
+    console.log("Too bad for you.")
+}
+
+var stringTwo = "2";
+
+var numberTwo = 2;
+
+if(stringTwo == numberTwo){
+    console.log("they're the same!");
+}
 
 // Check and see if a user is logged in
+var loggedIn = false;
+
+
 // If they are, print "Welcome back!""
 // If they're not, print "Please Log In!""
+if(loggedIn){
+    console.log("Welcome!");
+} else {
+    console.log("Please log in.")
+}
+
 
 
 // Declare a variable that represents a time of day
+var timeOfDay = "morning";
+var isSunny = true;
 
 // Check to see if the time of day is "morning", "afternoon", etc and print a greeting accordingly into "conditionals-container"
-
+if(timeOfDay === "morning" && isSunny === true){
+    console.log("Good morning! It's so nice out.")
+} else if (timeOfDay === "afternoon" || isSunny === false){
+    console.log("good afternoon! go outside")
+} else if (timeOfDay === "evening" && isSunny === true){
+    console.log("Good evening! The world is probably ending.")
+} else {
+    console.log("Whatever!")
+}
 // Declare a variable that represents the current temperature
 // Check to see if the temperature is less than or equal to 32. How about greater than or equal to 85? 
 
+var currentTemp = 34;
 
+if(currentTemp >= 32 && currentTemp <= 40){
+    console.log("It's between 32 and 40 degrees")
+} else if (currentTemp <= 20){
+    console.log("don't go out you'll die")
+} else {
+    console.log("It's fine out!")
+}
 
 
